@@ -1,0 +1,12 @@
+color: hsl(228, 45%, 44%);
+
+
+my api key : at_NnNpmi3dI4nIKDt1psEmsYiDx8e4P
+
+
+
+https://geo.ipify.org/api/v2/country?apiKey=${apiKey}&ipAddress=${userIp}
+
+
+
+https://api.ipify.org?format=json

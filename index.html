@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="final.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body class="bg-black">
+    <div class="cont m-auto sm:w-full w-full">
+      <div
+        class="img-container w-full bg-[url('./images/pattern-bg-desktop.png')] text-center h-[38.3vh] relative"
+      >
+        <h1
+          class="title text-white text-[20px] sm:text-[29px] font-semibold sm:pt-5 mb-5"
+        >
+          IP Address Tracker
+        </h1>
+        <form action="" class="mb-6 flex justify-center relative">
+          <span class="warn text-black absolute top-[-25px]"></span>
+          <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+            class="my-input w-[75%] sm:w-[35%] rounded-[13px] rounded-r-none text-[17px] font-normal p-[13px] px-5 outline-none inline placeholder:"
+          />
+          <div
+            class="my-btn bg-black flex justify-center items-center px-5 rounded-r-[13px] cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </div>
+        </form>
+        <div
+          class="info flex sm:flex-row flex-col shadow-my-shadow md:gap-3 sm:py-5 w-[75%] sm:w-[77%] bg-white rounded-xl absolute bottom-0 left-1/2 translate-x-[-50%] translate-y-[50%] z-[1]"
+        >
+          <div class="ip-block my-block">
+            <div>ip address</div>
+            <h2></h2>
+          </div>
+          <div class="location-block my-block">
+            <div>location</div>
+            <h2></h2>
+          </div>
+          <div class="timezone-block my-block">
+            <div>timezone</div>
+            <h2></h2>
+          </div>
+          <div class="isp-block last-block">
+            <div>isp</div>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div id="map" class="h-[calc((100vh)_-_38.3vh)] z-0"></div>
+    </div>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

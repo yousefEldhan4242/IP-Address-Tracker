@@ -1,0 +1,18 @@
+{
+  "name": "ip-address-tracker-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./main.css -o final.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

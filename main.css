@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-block {
+    @apply flex-1 relative mb-2 px-2  lg:text-[30px] lg:px-6 max-w-full text-center sm:text-start before:content-[''] before:absolute before:right-0 before:h-[70%] before:w-[1px] before:top-1/2 before:translate-y-[-50%] before:bg-[hsl(0,0%,59%)];
+  }
+  .my-block div {
+    @apply uppercase text-[hsl(0,0%,59%)] text-[10px] tracking-widest font-bold;
+  }
+  .my-block h2 {
+    @apply font-bold text-[20px] sm:mt-1;
+  }
+  .last-block {
+    @apply sm:text-start text-center flex-1 px-1 lg:text-[30px] lg:px-6 max-w-full mb-2;
+  }
+  .last-block div {
+    @apply uppercase text-[hsl(0,0%,59%)] text-[10px] tracking-widest font-bold;
+  }
+  .last-block h2 {
+    @apply font-bold text-[20px] sm:mt-1;
+  }
+}
